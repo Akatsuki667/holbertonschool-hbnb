@@ -7,23 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav id="nav-bar">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
     <main>
-        <section id="place-details">
+        <section class="place-details">
             <!-- Place details will be populated dynamically -->
+            <h2>Beautiful Beach House</h2>
+            <div class="place-info">
+                <p><strong>Host:</strong></p>
+                <p><strong>Price per night:</strong></p>
+                <p><strong>Description:</strong></p>
+                <p><strong>Amenities:</strong></p>
+            </div>
         </section>
-        <section id="reviews">
+        <section class="reviews">
             <!-- Reviews will be populated dynamically -->
+            <h2>Reviews</h2>
+            <div class="review-list">
+                <p><strong>Name:</strong></p>
+                <p>Review</p>
+                <p>Rating:</p>
+            </div>
         </section>
-        <section id="add-review">
+        <section class="add-review">
             <h2>Add a Review</h2>
             <form id="review-form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                
-                <button type="submit">Submit</button>
+                <p>
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" name="review-text" required></textarea>
+                </p>
+                <p>
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <!-- Options for rating -->
+                        <option value="1">1 star</option>
+                        <option value="2">2 star</option>
+                        <option value="3">3 star</option>
+                        <option value="4">4 star</option>
+                        <option value="5">5 star</option>
+                    </select>
+                </p>
+                <button type="submit" class="submit-button">Submit Review</button>
             </form>
         </section>
     </main>
     <script src="scripts.js"></script>
+    <footer id="footer">
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
 </body>
 </html>

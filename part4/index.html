@@ -8,22 +8,46 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav-bar">
+            <img src="images/logo.png" alt="logo" id="logo">
             <a href="login.html" id="login-link">Login</a>
         </nav>
     </header>
     <main>
         <section id="filter">
-            <label for="price-filter">Max Price:</label>
-            <select id="price-filter">
-                <!-- Options will be populated dynamically -->
-            </select>
+            <h2>Availables Places</h2>
+            <p>
+                <label for="price-filter">Max Price:</label>
+                <select id="price-filter">
+                    <!-- Options will be populated dynamically -->
+                    <option value="all">All</option>
+                    <option value="150">$100</option>
+                    <option value="150">$150</option>
+                    <option value="150">$200</option>
+                </select>
+            </p>
         </section>
         <section id="places-list">
             <!-- List of places will be populated dynamically -->
+            <ul class="place-list">
+                <li class="place-card">
+                    <h3>Beautiful Beach House</h3>
+                    <p>Price per night: $150</p>
+                    <button type="button" class="details-button">View Details</button>
+                </li>
+                <li class="place-card">
+                    <h3>Cozy Cabin</h3>
+                    <p>Price per night: $100</p>
+                    <button type="button" class="details-button">View Details</button>
+                </li>
+                <li class="place-card">
+                    <h3>Modern Apartment</h3>
+                    <p>Price per night: $200</p>
+                    <button type="button" class="details-button">View Details</button>
+                </li>
+            </ul>
         </section>
     </main>
     <script src="scripts.js"></script>
 </body>
 </html>
-

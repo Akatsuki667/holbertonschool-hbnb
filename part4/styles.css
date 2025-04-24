@@ -1,0 +1,128 @@
+/* 
+  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
+  You'll probably need to override some of theese styles.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    color: #fff;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+#nav-bar {
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between; /* Sépare les éléments */
+    align-items: center;
+}
+
+#footer {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+#login-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+#filter {
+    text-align: center;
+}
+
+.place-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* optionnel pour centrer horizontalement */
+    flex-wrap: wrap; /* rend les cartes responsives */
+}
+
+.place-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-card h3 {
+    margin-top: 0;
+}
+
+
+.submit-button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.details-button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.place-details {
+    text-align: center;
+}
+
+.place-info {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews {
+    text-align: center;
+}
+
+.review-list {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-review {
+    text-align: center;
+}

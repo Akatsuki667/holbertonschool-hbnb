@@ -23,7 +23,8 @@ def create_app(config_class=DevelopmentConfig):
 
     # Initialize database
     db.init_app(app)
-
+    with app.app_context():
+        db.create_all()
     # Register v1 Blueprint (which registers api namespaces)
     from app.api.v1 import api_v1
     app.register_blueprint(api_v1)

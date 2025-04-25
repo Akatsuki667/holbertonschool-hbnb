@@ -1,8 +1,8 @@
 USE development;
 
-INSERT INTO users (id, email, first_name, last_name, password, is_admin)
-    VALUES ('36c9050e-ddd3-4c3b-9731-9f487208bbc1', 'admin@hbnb.io', 'Admin',
-    'HBnB', '$2b$12$rxBJzT4WIFSdoN/KJtSzS.FjvrYA4bX8BDGr0KXQKnpWA/5/xRsv6', TRUE);
+INSERT INTO users (id, first_name, last_name, email, password, is_admin)
+    VALUES ('36c9050e-ddd3-4c3b-9731-9f487208bbc1', 'Admin',
+    'HBnB', 'admin@gmail.com', '$2b$12$Hv/dni8GE8hlLiAjPgBh/OSvLPevjubVWryoyjYVwf310X.uSIx3q', TRUE);
 
 INSERT INTO amenities (id, name)
     VALUES ('3d62d56b-3641-4dbd-9050-66f9faf7db9f', 'Wifi'),

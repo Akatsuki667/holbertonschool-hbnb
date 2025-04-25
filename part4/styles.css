@@ -114,6 +114,19 @@ main {
     text-align: center;
 }
 
+.review-form {
+    display: flex;
+    flex-direction: column; /* empile les enfants verticalement */
+    gap: 1rem;              /* espace entre les éléments */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 90%;
+    text-align: center;
+}
+
 .review-list {
     background-color: #f0f0f0;
     border-radius: 10px;
